@@ -227,6 +227,7 @@ main .visual_wrap .visual_box .visual_bg {float: left;
 main .visual_wrap .visual_box li:nth-child(1) {background-image: url(../img/visual_1.png);}
 main .visual_wrap .visual_box li:nth-child(2) {background-image: url(../img/visual_2.png);}
 main .visual_wrap .visual_box li:nth-child(3) {background-image: url(../img/visual_3.png);}
+main .visual_wrap .visual_box li:nth-child(4) {background-image: url(../img/visual_1.png);}
 main .visual_wrap .visual_box .visual_bg a {display: block;}
 
 /* quickmenu */
