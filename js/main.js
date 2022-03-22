@@ -32,10 +32,10 @@ $(function() {
   $('.visual_box ul').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
+    dots : false,
+    arrows : false,
   })
-
-  
 
 
 // pc-product_wrap_swiper
@@ -52,8 +52,8 @@ const swiper = new Swiper('.product_wrap .content', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.mo_prod_next',
-    prevEl: '.mo_prod_prev',
+    nextEl: '.prod_next',
+    prevEl: '.prod_prev',
   },
 
   // And if we need scrollbar
@@ -99,12 +99,12 @@ const swiper = new Swiper('.product_wrap .content', {
         breakpoint :721,
         settings : {
           slidesToShow : 1,
-          dots : false,
-          centerMode : false
+          centerMode : false,
         }
       }
     ]
   });
+  
 
   // mob allmenu
   $('.allmenu_box .a1').first().css({'margin-top' : '90px'})
@@ -113,10 +113,8 @@ const swiper = new Swiper('.product_wrap .content', {
 
    // mob allmenu click
   $('.allmenu_wrap .allmenu_box .a1>li>a').click(function() {
-    $(this).next().slideToggle();
+    $(this).next().stop().slideToggle(1000);
     $(this).parent('li').siblings().children('.a2').slideUp()
-    // $('.allmenu_box .a2>li>a').children().show();
-    // $('.allmenu_box .dep1>a').css({'transform' : 'rotate(45deg)'}) +표시 회전
   })
 
   // mob-quickmenu_slick
@@ -139,21 +137,14 @@ const swiper = new Swiper('.product_wrap .content', {
       }
     ]
   })
-//window.alert($('.familysite_wrap ul').outerHeight(true))
-  // footer 패밀리 사이트 모르겠음
   $('.fam_btn button').click(function() {
-    //$('.familysite_wrap ul').animate({'height' : '248px'})
     $('.familysite_wrap ul').slideToggle(500)
     $(this).toggleClass('on')
     $('.familysite_wrap .fam_btn button span').css({'transform' : 'rotate(-90deg)'})
   })
-  // $('.fam_btn button').click(function() {
-  //   $('.familysite_wrap ul').slideToggle()
-  //   if($('.familysite_wrap ul').slideDown()) {
-  //     $('.fam_btn button').css({'border-radius' : '36px'})
-  //   }
-  //   else {$('.fam_btn button').css({'border-radius' : 'none'})}
-  // //   $(this).css({'border-radius' : '0'})
-  // //   $('.familysite_wrap ul').slideDown()
-  // })
+
+  // top_btn
+  $('.top_btn a').click(function() {
+    $('html, body').stop().animate({scrollTop : '0'},500)
+  })
 }) //ready()
