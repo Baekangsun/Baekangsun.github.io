@@ -113,9 +113,13 @@ const swiper = new Swiper('.product_wrap .content', {
 
    // mob allmenu click
   $('.allmenu_wrap .allmenu_box .a1>li>a').click(function() {
-    $(this).next().stop().slideToggle(1000);
-    $(this).parent('li').siblings().children('.a2').slideUp()
+    // $(this).next().stop().slideToggle();
+    if($(window).width() < 720) {
+      $(this).next().stop().slideToggle();
+      $(this).parent('li').siblings().children('.a2').slideUp()
+    }
   })
+
 
   // mob-quickmenu_slick
   $('.quickmenu_wrap ul').slick({

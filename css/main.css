@@ -720,6 +720,29 @@ main .news_wrap .news_cont img {
   }
   header .allmenu_box {left: 50%;}
   header .allmenu_box .all_close_btn {right: 10%;}
+  header .allmenu_box .mo_all_login {display: block;
+    width: 20px;height: 20px;
+    position: absolute;
+    left: 10%;top: 34px;
+  }
+
+  header .allmenu_box .mo_all_search {
+    position: relative;
+    position: absolute;top: 573px;
+    left: 10%;right: 10%;
+  }
+  header .allmenu_box .mo_all_search input {
+    border: 1px solid #999;padding: 10px;
+    width: 100%;
+    
+  }
+  header .allmenu_box .mo_all_search img {
+    width: 20px;height: 20px;
+    position: absolute;right: 10%;top: calc(50% - 10px);
+  }
+
+
+
   header .allmenu_box .a1>li {position: relative;}
   header .allmenu_box .a1>li>a {
     display: block;
@@ -836,13 +859,14 @@ main .news_wrap .news_cont img {
   }
 }
 @media screen and (max-width: 720px) { /* 모바일 */
-  .top_btn {bottom: 30px;}
+  .top_btn {right: 50px;bottom: 50px;}
   .top_btn button {width: 40px;height: 40px;}
   .top_btn button a {line-height: 40px;font-size: 14px;}
 
   /* mob-header */
   header .allmenu_box {left: 100px;}
-  header .allmenu_box .all_close_btn {right: 5%;}
+  header .allmenu_box .all_close_btn {right: 5}
+
 
   /* mob-footer */
   footer .footer_menu li:after {height: 10px;}
