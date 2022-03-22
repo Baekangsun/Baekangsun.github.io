@@ -251,22 +251,22 @@ main .quickmenu_wrap li .ico {
   background-size: 500px 490px;
 }
 
-main .quickmenu_wrap li:nth-child(1) .ico {background-position:0 0;}
-main .quickmenu_wrap li:nth-child(2) .ico {background-position:0 -70px;}
-main .quickmenu_wrap li:nth-child(3) .ico {background-position:0 -140px;}
-main .quickmenu_wrap li:nth-child(4) .ico {background-position:0 -210px;}
-main .quickmenu_wrap li:nth-child(5) .ico {background-position:0 -280px;}
-main .quickmenu_wrap li:nth-child(6) .ico {background-position:0 -350px;}
-main .quickmenu_wrap li:nth-child(7) .ico {background-position:0 -420px;}
+main .quickmenu_wrap li .ico1 {background-position:0 0;}
+main .quickmenu_wrap li .ico2 {background-position:0 -70px;}
+main .quickmenu_wrap li .ico3 {background-position:0 -140px;}
+main .quickmenu_wrap li .ico4 {background-position:0 -210px;}
+main .quickmenu_wrap li .ico5 {background-position:0 -280px;}
+main .quickmenu_wrap li .ico6 {background-position:0 -350px;}
+main .quickmenu_wrap li .ico7 {background-position:0 -420px;}
 
 
-main .quickmenu_wrap li:hover:nth-child(1) .ico {background-position:-70px 0;}
-main .quickmenu_wrap li:hover:nth-child(2) .ico {background-position:-70px -70px;}
-main .quickmenu_wrap li:hover:nth-child(3) .ico {background-position:-70px -140px;}
-main .quickmenu_wrap li:hover:nth-child(4) .ico {background-position:-70px -210px;}
-main .quickmenu_wrap li:hover:nth-child(5) .ico {background-position:-70px -280px;}
-main .quickmenu_wrap li:hover:nth-child(6) .ico {background-position:-70px -350px;}
-main .quickmenu_wrap li:hover:nth-child(7) .ico {background-position:-70px -420px;}
+main .quickmenu_wrap li:hover .ico1 {background-position:-70px 0;}
+main .quickmenu_wrap li:hover .ico2 {background-position:-70px -70px;}
+main .quickmenu_wrap li:hover .ico3 {background-position:-70px -140px;}
+main .quickmenu_wrap li:hover .ico4 {background-position:-70px -210px;}
+main .quickmenu_wrap li:hover .ico5 {background-position:-70px -280px;}
+main .quickmenu_wrap li:hover .ico6 {background-position:-70px -350px;}
+main .quickmenu_wrap li:hover .ico7 {background-position:-70px -420px;}
 
 main .quickmenu_wrap li:hover {border: 1px solid var(--orange);}
 main .quickmenu_wrap li:hover p {color: var(--orange);}
@@ -480,7 +480,7 @@ main .news_wrap .news_cont img {
   header .allmenu_box .a1 {
     height: 100%;
     padding: 50px 0;
-    margin: 0 100px;
+    margin: 100px 0 0 100px;
     overflow: hidden;
     text-align: center;
   }
@@ -728,23 +728,24 @@ main .news_wrap .news_cont img {
   }
 
   header .allmenu_box .mo_all_search {
-    position: relative;
-    position: absolute;top: 573px;
-    left: 10%;right: 10%;
+    position: absolute;
+    left: calc(10% + 40px);right: calc(10% + 40px);top: 30px;
   }
   header .allmenu_box .mo_all_search input {
-    border: 1px solid #999;padding: 10px;
     width: 100%;
-    
+    padding: 4px;
+    border: 1px solid #999;
+    border-radius: 12px;
   }
   header .allmenu_box .mo_all_search img {
     width: 20px;height: 20px;
-    position: absolute;right: 10%;top: calc(50% - 10px);
+    position: absolute;right: 10px;top: calc(50% - 10px);
   }
 
 
-
+  header .allmenu_box .a1 {margin-top: 90px;}
   header .allmenu_box .a1>li {position: relative;}
+  header .allmenu_box .a1>li:last-child {border-bottom: 1px solid #ccc;}
   header .allmenu_box .a1>li>a {
     display: block;
     padding: 15px 20px;
@@ -753,9 +754,8 @@ main .news_wrap .news_cont img {
     font-size: 18px;
     font-weight: 600;
   }
-  header .allmenu_box .a1>li:last-child {border-bottom: 1px solid #ccc;}
 
-  header .allmenu_box .a2 {background: #ddd;display: none;}
+  header .allmenu_box .a2 {background: #f1f1f1;display: none;}
   header .allmenu_box .a2>li {border-bottom: 1px solid #ccc;}
   header .allmenu_box .a2>li:last-child {border-bottom: none;}
   header .allmenu_box .a2>li>a {
@@ -877,7 +877,6 @@ main .news_wrap .news_cont img {
 
   /* mob-main */
   main h3 {margin-bottom: 50px;}
-  main .more_btn a {padding: 12px 20px;font-size: 14px;}
   main .quickmenu_wrap li {
     float: left;
     width: 150px;height: 150px;
@@ -907,21 +906,24 @@ main .news_wrap .news_cont img {
   main .event_wrap .event_btn {}
   main .event_wrap .event_btn .event_prve {
     width: 22px;height: 40px;
-    left: 30%;top: auto;bottom: 42px;
+    left: 35%;top: auto;bottom: 42px;
    }
   main .event_wrap .event_btn .event_next { 
    width: 22px;height: 40px;
-   right: 30%;top: auto;bottom: 42px;
+   right: 35%;top: auto;bottom: 42px;
   }
   main .event_wrap .slick-dots {
     position: absolute;
-    left: 50%;bottom: -54px;
+    left: calc(50% - 2px);bottom: -44px;
     transform: translateX(-50%);
 
   }
-  main .event_wrap .slick-dots li {width: 12px;height: 12px;}
+  main .event_wrap .slick-dots li {display: none;}
   main .event_wrap .slick-dots .slick-active {
-    width: 26px;height: 12px;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
   }
   main .more_btn {margin-top: 80px;}
 

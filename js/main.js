@@ -100,21 +100,44 @@ const swiper = new Swiper('.product_wrap .content', {
         settings : {
           slidesToShow : 1,
           centerMode : false,
+          customPaging : function (slider, i) {
+            console.log("slider",slider)
+            console.log("i",i)
+            return  (i + 1) + '/' + slider.slideCount;
+          }
         }
       }
     ]
   });
+  $('.event_wrap ul').bind('DOMSubtreeModified', function() {
+    var prev = $('.event_wrap ul .slick-active').prev(),
+    current = $(".event_wrap ul").find(".slick-active");
+
+    current.addClass('on').siblings().removeClass('on');
+    prev.addClass('prev').siblings().removeClass('prev');
+  })
+
+  var nextBtn = $('.event_wrap .event_btn .event_next'),
+      nowSlider = $(".slick-current");
+
+  nextBtn.on('click', function() {
+      console.log('다음');
+      nowSlider.addClass('sss');
+  })
+  
   
 
   // mob allmenu
-  $('.allmenu_box .a1').first().css({'margin-top' : '90px'})
   $('.allmenu_box .a1>li').has('ul').addClass('dep1');
   $('.allmenu_box .a2>li').has('ul').addClass('dep2');
 
    // mob allmenu click
   $('.allmenu_wrap .allmenu_box .a1>li>a').click(function() {
     // $(this).next().stop().slideToggle();
-    if($(window).width() < 720) {
+    if($(window).width() > 1199) {
+      $(this).next().stop().show();
+    }
+    else {
       $(this).next().stop().slideToggle();
       $(this).parent('li').siblings().children('.a2').slideUp()
     }
@@ -125,7 +148,7 @@ const swiper = new Swiper('.product_wrap .content', {
   $('.quickmenu_wrap ul').slick({
     slidesToShow: 7,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     responsive : [
       {
         breakpoint : 1200,
