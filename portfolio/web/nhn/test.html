@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li {border: 1px solid red;font-size: 50px;margin: 20px;padding: 35px 120px;}
+    /*li:nth-child(1) {background: url(img/img-bizethics-1.png) no-repeat left center;}
+    li:nth-child(2) {background: url(img/img-bizethics-2.png) no-repeat left center;}
+    li:nth-child(3) {background: url(img/img-bizethics-3.png) no-repeat left center;}*/
+
+    li:before {content:"";display: block;width: 60px;height: 80px;background: pink;}
+    li:nth-child(2):before {background: gold;}
+    li:nth-child(3):before {background: powderblue;}
+
+    .box {width: 500px;background: pink;margin: 100px;padding: 100px;position: relative;}
+    .box::before {
+      content:"";display: block;width: 50px;height: 50px;background: green;
+      position: absolute;left: 0;top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">NHN(이하 ‘회사’라 합니다)은 고객이 원하는 가치를 경영활동의 최우선 판단기준으로 여기며, 고객이 만족할 수 있고 도움이 되는 가치를 끊임없이 창출합니다.<br>
+    고객에게 정직함으로써 고객으로부터 절대적인 신뢰를 받을 수 있도록 노력하고, 고객의 의견에 항상 귀 기울입니다.</div>
+
+  <!-- <ul>
+    <li>li_1</li>
+    <li>li_2</li>
+    <li>li_3</li>
+    <li>li_4</li>
+    <li>li_5</li>
+    <li>li_6</li>
+  </ul> -->
+</body>
+</html>
