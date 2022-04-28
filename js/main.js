@@ -1,177 +1,144 @@
-$(function() {
-  // pc_srech
-  $('.search_wrap .search_btn').click(function() {
-    $('.search_wrap .search_box').after().show()
-  })
-  $('.search_wrap .search_close_btn').click(function() {
-    $('.search_wrap .search_box').hide()
-  })
+$(function () {
+  //홈 화면 스크롤 이벤트
 
-  // pc_allmenu
-  $('.all_open_btn').click(function() {
-    $('.allmenu_box').show()
-    $('.allmenu_wrap').addClass('allmenu_bg')
-  })
-  $('.allmenu_box .all_close_btn').click(function() {
-    $('.allmenu_box').hide()
-    $('.allmenu_wrap').removeClass('allmenu_bg')
+  var _home = $("#home");
+  var _homeTop = _home.offset().top;
+  var _aboutTop = $("#about").offset().top;
+  // home_mouse click
+  $('#home .scroll').click(function () {
+    $('html, body').animate({ scrollTop: _aboutTop }, 600)
   })
 
-  // pc_gnb_bg
-  $('.g1').hover(function() {
-    $('header').addClass('gnb_bg')
-    $('.g2').show()
-    $('.search_wrap .search_box').hide()
-  }, function() {
-    $('header').removeClass('gnb_bg')
-    $('.g2').hide()
+  //GNB
+  $('#gnb li').click(function () {
+    let n = $(this).index()
+    $('html, body').animate({
+      scrollTop: $('section').eq(n).offset().top
+    })
   })
 
-  
-// pc-visual_wrap_swiper
-  $('.visual_box ul').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    dots : false,
-    arrows : false,
-  })
+  //GNB 스타일 변경
+  // if ($(window).scrollTop() >= $('#about').offset().top) {
+  //   $('header').addClass('bg_on')
 
+  // }
+  // if ($(window).scrollTop() < $('#about').offset().top) {
+  //   $('header').removeClass('bg_on')
 
-// pc-product_wrap_swiper
-const swiper = new Swiper('.product_wrap .content', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.prod_next',
-    prevEl: '.prod_prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.prod_slider',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    720: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 40
+  // }     
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= $('#about').offset().top) {
+      $('header').addClass('bg_on');
     }
-  }
-});
+    if ($(window).scrollTop() < $('#about').offset().top) {
+      $('header').removeClass('bg_on')
+    }
+  })
 
-
-  // pc-mian_event_wrap slick
-  $('.event_wrap ul').slick({
-    autoplay: true,
-    // autoSpeed : 5000,
-    slidesToShow : 3,
-    prevArrow : $('.event_wrap .event_btn .event_prve'),
-    nextArrow : $('.event_wrap .event_btn .event_next'),
-    zIndex : 100,
-    dots : true,
-    centerMode : true,
-    centerPadding : 0,
-    responsive : [
-      {
-        breakpoint : 1200,
-        settings : {
-          slidesToShow : 2
-        }
-      },
-      {
-        breakpoint :721,
-        settings : {
-          slidesToShow : 1,
-          centerMode : false,
-          customPaging : function (slider, i) {
-            console.log("slider",slider)
-            console.log("i",i)
-            return  (i + 1) + '/' + slider.slideCount;
-          }
-        }
-      }
-    ]
+  //Web Work
+  const swiper = new Swiper('.web_swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'cards',
+    // If we need pagination
+    pagination: {
+      el: '.web_pagination',
+      type: 'fraction',
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.web_next',
+      prevEl: '.web_prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.web_scrollbar',
+    },
   });
-  $('.event_wrap ul').bind('DOMSubtreeModified', function() {
-    var prev = $('.event_wrap ul .slick-active').prev(),
-    current = $(".event_wrap ul").find(".slick-active");
 
-    current.addClass('on').siblings().removeClass('on');
-    prev.addClass('prev').siblings().removeClass('prev');
+  //Graphic Tabs
+  $('#work2 .tabs li').click(function () {
+    $(this).addClass('on')
+    $('#work2 .tabs li').not(this).removeClass('on');
+
+    let gname = $(this).attr('class').substr(0, 2);
+  });
+  $('#work2 .work_thumb li').hover(function () {
+    $(this).find('span').fadeIn();
+  }, function () {
+    $(this).find('span').fadeOut()
+  })
+  let graphic = $('.work_thumb').isotope()
+
+  $('#work2 .tabs li').click(function () {
+    let val = $(this).attr('data-filter');
+    graphic.isotope({
+      filter: val
+    })
   })
 
-  var nextBtn = $('.event_wrap .event_btn .event_next'),
-      nowSlider = $(".slick-current");
-
-  nextBtn.on('click', function() {
-      console.log('다음');
-      nowSlider.addClass('sss');
-  })
-  
-  
-
-  // mob allmenu
-  $('.allmenu_box .a1>li').has('ul').addClass('dep1');
-  $('.allmenu_box .a2>li').has('ul').addClass('dep2');
-
-   // mob allmenu click
-  $('.allmenu_wrap .allmenu_box .a1>li>a').click(function() {
-    // $(this).next().stop().slideToggle();
-    if($(window).width() > 1199) {
-      $(this).next().stop().show();
-    }
-    else {
-      $(this).next().stop().slideToggle();
-      $(this).parent('li').siblings().children('.a2').slideUp()
-    }
+  lightbox.option({
+    fitImagesInViewport: false,
+    positionFromTop: 100
   })
 
-
-  // mob-quickmenu_slick
-  $('.quickmenu_wrap ul').slick({
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive : [
-      {
-        breakpoint : 1200,
-        settings : {
-          slidesToShow : 4
-        }
-      },
-      {
-        breakpoint :721,
-        settings : {
-          slidesToShow : 2
-        }
+  $(window).on('scroll', function () {
+    console.log('_aboutTop', _aboutTop)
+    console.log('windowTop', $(window).scrollTop())
+    console.log("조건", $(window).scrollTop() == _aboutTop)
+    if ($(window).scrollTop() == 1000) {
+      draw(70, '.psd', '#ddd');
+      draw(70, '.ai', '#ddd');
+      draw(90, '.html', '#ddd');
+      draw(90, '.css', '#ddd');
+      draw(50, '.js', '#ddd');
+      draw(70, '.jq', '#ddd');
+      function draw(max, classname, colorname) {
+        var i = 1;
+        var func1 = setInterval(function () {
+          if (i < max) {
+            color1(i, classname, colorname);
+            i++;
+          } else {
+            clearInterval(func1);
+          }
+        }, 10);
       }
-    ]
-  })
-  $('.fam_btn button').click(function() {
-    $('.familysite_wrap ul').slideToggle(500)
-    $(this).toggleClass('on')
-    $('.familysite_wrap .fam_btn button span').css({'transform' : 'rotate(-90deg)'})
+      function color1(i, classname, colorname) {
+        $(classname).css({
+          "background": "conic-gradient(" + colorname + " 0% " + i + "%, #000 " + i + "% 100%)"
+        });
+      }
+    }
   })
 
-  // top_btn
-  $('.top_btn a').click(function() {
-    $('html, body').stop().animate({scrollTop : '0'},500)
-  })
-}) //ready()
+
+  // skill
+  // $(window).ready(function () {
+  //   draw(70, '.psd', '#ddd');
+  //   draw(70, '.ai', '#ddd');
+  //   draw(90, '.html', '#ddd');
+  //   draw(90, '.css', '#ddd');
+  //   draw(50, '.js', '#ddd');
+  //   draw(70, '.jq', '#ddd');
+  // });
+
+  // function draw(max, classname, colorname) {
+  //   var i = 1;
+  //   var func1 = setInterval(function () {
+  //     if (i < max) {
+  //       color1(i, classname, colorname);
+  //       i++;
+  //     } else {
+  //       clearInterval(func1);
+  //     }
+  //   }, 10);
+  // }
+  // function color1(i, classname, colorname) {
+  //   $(classname).css({
+  //     "background": "conic-gradient(" + colorname + " 0% " + i + "%, #000 " + i + "% 100%)"
+  //   });
+  // }
+
+})//ready()

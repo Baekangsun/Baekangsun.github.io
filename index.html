@@ -8,12 +8,12 @@
   <title>배강선 :: 웹퍼블리셔 포트폴리오</title>
   <link rel="icon" href="img/favicon.png">
   <!--CSS-->
-  <link rel="stylesheet" href="web/css/fonts.css">
-  <link rel="stylesheet" href="web/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="web/css/lightbox.css">
-  <link rel="stylesheet" href="web/css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!--JS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -21,8 +21,8 @@
   <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
-  <script src="web/js/lightbox.js"></script>
-  <script src="web/js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -89,12 +89,14 @@
             <div class="skill">
               <h3>skill</h3>
               <ul class="s1 clrfix">
-                <li class="psd"><img src="img/psd.png" alt=""><span>70%</span></li>
-                <li class="ai"><img src="img/ai.png" alt=""><span>70%</span></li>
-                <li class="html"><img src="img/html.png" alt=""><span>90%</span></li>
-                <li class="css"><img src="img/css.png" alt=""><span>90%</span></li>
-                <li class="js"><img src="img/js.png" alt=""><span>50%</span></li>
-                <li class="jq"><img src="img/jquery.png" alt=""><span>70%</span></li>
+                <li class="pie-chart psd">
+                  <span class="center"></span><img src="img/psd.png" alt="포토샵 로고"><span>70%</span>
+                </li>
+                <li class="pie-chart ai"><img src="img/ai.png" alt="일러스트 로고"><span>70%</span></li>
+                <li class="pie-chart html"><img src="img/html.png" alt="html 로고"><span>90%</span></li>
+                <li class="pie-chart css"><img src="img/css.png" alt="css 로고"><span>90%</span></li>
+                <li class="pie-chart js"><img src="img/js.png" alt="javaScript 로고"><span>50%</span></li>
+                <li class="pie-chart jq"><img src="img/jquery.png" alt="jQuery 로고"><span>70%</span></li>
               </ul>
             </div>
           </div>
@@ -143,13 +145,12 @@
                     </ul>
                   </div>
                   <div class="link nhn_link">
-                    <a href="web/drive/" target="_blank">메인페이지</a>
+                    <a href="web/nhn/index.html" target="_blank">메인페이지</a>
                   </div>
                   <div class="sub_link">
-                    <a href="web/nhn/ad_video.html" target="_blank">광고,홍보 페이지</a>
-                    <a href="web/nhn/company_ethics.html" target="_blank">기업윤리규범 페이지</a>
-                    <a href="web/nhn/press_release.html" target="_blank">보도자료 페이지</a>
-                    <a href="web/nhn/related_company.html" target="_blank">주요관계사 페이지</a>
+                    <a href="web/nhn1/company_ethics.html" target="_blank">기업윤리규범 페이지</a>
+                    <a href="web/nhn1/press_release.html" target="_blank">보도자료 페이지</a>
+                    <a href="web/nhn1/related_company.html" target="_blank">주요관계사 페이지</a>
                   </div>
                 </div>
               </div>
@@ -313,7 +314,7 @@
               </a>
             </div>
             <div class="curriculum">
-              <a href="#" target="_blank">
+              <a href="배강선_입사지원서.hwp" target="_blank">
                 <img src="img/curriculum.png" alt="이력서 아이콘">
                 <p>이력서</p>
               </a>
