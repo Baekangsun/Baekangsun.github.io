@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-/* font-family: 'Noto Sans KR', sans-serif; */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
-/* font-family: 'Roboto', sans-serif; */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* reset */
 * {
@@ -122,8 +116,9 @@ caption {
 body,
 html {
   height: 100%;
-  font-style: normal;
   line-height: 1em;
+  font-style: normal;
+  font-family: "Roboto", "Noto Sans KR", "AppleSDGothicNeo", sans-serif;
 }
 
 /* Common */
@@ -154,13 +149,13 @@ html {
 .skip_nav a {
   display: block;
   padding: 10px 0;
+  background: #000;
+  text-align: center;
   position: absolute;
   left: 0;
   right: 0;
   top: -36px;
-  background: #000;
   color: #fff;
-  text-align: center
 }
 
 .skip_nav a:focus {
@@ -194,12 +189,12 @@ html {
 /* 공통 */
 /* header */
 header {
+  border-bottom: 1px solid #ccc;
+  background: #fff;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  border-bottom: 1px solid #999;
-  background: #fff;
   z-index: 9999;
 }
 
@@ -370,7 +365,6 @@ footer .customer_wrap p {
   font-weight: 700;
 }
 
-footer .familysite_wrap {}
 
 footer .familysite_wrap .fam_btn {
   position: relative;
@@ -380,10 +374,10 @@ footer .familysite_wrap .fam_btn button {
   width: 100%;
   padding: 10px 25px;
   border: 1px solid #AAA;
+  border-radius: 35px;
   color: #666;
   font-weight: 500;
   font-size: 16px;
-  border-radius: 35px;
 }
 
 footer .familysite_wrap .fam_btn button.on {
@@ -416,8 +410,8 @@ footer .familysite_wrap ul {
 }
 
 footer .familysite_wrap li {
-  line-height: 30px;
   margin-top: -1px;
+  line-height: 30px;
 }
 
 footer .familysite_wrap li a {
@@ -699,7 +693,6 @@ main .product_wrap .content li a p {
 }
 
 /* product_wrap_swiper */
-main .product_wrap .swiper-wrapper {}
 
 main .product_wrap .prod_slider {
   margin: auto;
@@ -754,11 +747,8 @@ main .event_wrap .event_cont img {
   width: 100%;
 }
 
-main .event_wrap .event_cont .event_box {}
 
 /* slick */
-main .event_wrap .slick-arrow {}
-
 main .event_wrap .event_btn .event_prve {
   width: 33px;
   height: 60px;
@@ -1015,8 +1005,6 @@ main .news_wrap .news_cont img {
     text-align: center;
   }
 
-  header .gnb_wrap .g1 {}
-
   header .gnb_wrap .g1>li {
     display: inline-block;
     line-height: 90px;
@@ -1140,14 +1128,14 @@ main .news_wrap .news_cont img {
     width: 30px;
     position: absolute;
     left: 10px;
-    bottom: 3px;
+    bottom: 2px;
   }
 
-  main .visual_wrap .vis_btn .stop {
+  main .visual_wrap .vis_btn .Pause {
     width: 30px;
     position: absolute;
     left: 10px;
-    bottom: 3px;
+    bottom: 2px;
   }
 
   main .visual_wrap .vis_btn .vis_prve {
@@ -1491,8 +1479,6 @@ main .news_wrap .news_cont img {
   }
 
   /* tab-product_wrap*/
-  main .product_wrap .prod_prev {}
-
   main .product_wrap .prod_next {
     width: 33px;
     height: 60px;
@@ -1510,7 +1496,6 @@ main .news_wrap .news_cont img {
   }
 
   /* tab-quick_info_wrap*/
-  main .quick_info_wrap {}
 
   main .quick_info_wrap .cont_wrap .content {
     width: 100%;
@@ -1548,7 +1533,6 @@ main .news_wrap .news_cont img {
 
 
   /* tab-news_wrap */
-  main .news_wrap {}
 
   main .news_wrap .news_cont {
     height: 50px;

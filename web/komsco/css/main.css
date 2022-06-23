@@ -125,8 +125,6 @@ button {
   transform: translateY(-50%) rotate(180deg);
 }
 
-.popup .controls {}
-
 .popup .controls button {
   width: 10px;
   height: 10px;
@@ -327,15 +325,10 @@ header .header_util .allmenu_wrap .allmenu_box .a1 {
   color: #333
 }
 
-header .header_util .allmenu_wrap .allmenu_box .a1>li {}
 
 header .header_util .allmenu_wrap .allmenu_box .a1>li>a {
   font-weight: 600;
 }
-
-header .header_util .allmenu_wrap .allmenu_box .a2 {}
-
-header .header_util .allmenu_wrap .allmenu_box .a2>li {}
 
 header .header_util .allmenu_wrap .allmenu_box .a2>li>a {
   font-size: 18px;
@@ -556,8 +549,6 @@ footer .corp_info_wrap address span {
 }
 
 /*main*/
-main {}
-
 main .main_nav {
   position: fixed;
   right: 40px;
@@ -626,8 +617,6 @@ main .visual_wrap {
   padding: 0;
   position: relative;
 }
-
-main .visual_wrap figure {}
 
 main .visual_wrap figure img {
   position: absolute;
@@ -742,7 +731,6 @@ main .visual_wrap .visual_txt .control .play {
   display: none;
 }
 
-main .visual_wrap .visual_txt .control .stop {}
 
 main .exhibit_wrap {
   background: url(../img/section2_bg.jpg);
@@ -859,8 +847,6 @@ main .standing_wrap {
   color: #FFF;
 }
 
-main .standing_wrap ul {}
-
 main .standing_wrap li {
   float: left;
   width: calc(25% - 18px);
@@ -974,7 +960,6 @@ main .museum_info_wrap .con_box .more {
   top: 0;
 }
 
-main .museum_info_wrap .cont1 {}
 
 main .museum_info_wrap .cont1 .banner {
   float: left;
@@ -983,7 +968,6 @@ main .museum_info_wrap .cont1 .banner {
   position: relative;
 }
 
-main .museum_info_wrap .cont1 .banner .slider {}
 
 main .museum_info_wrap .cont1 .banner .slider a {
   display: block;
@@ -1046,8 +1030,6 @@ main .museum_info_wrap .cont1 .banner .control .pagination span {
   display: inline-block;
 }
 
-main .museum_info_wrap .cont1 .banner .control .pagination .current {}
-
 main .museum_info_wrap .cont1 .banner .control .pagination .current:after {
   content: "";
   display: inline-block;
@@ -1079,7 +1061,6 @@ main .museum_info_wrap .cont1 .vr h3 {
   line-height: 1;
 }
 
-main .museum_info_wrap .cont2 {}
 
 main .museum_info_wrap .cont2 dl {
   padding: 12px 0;
@@ -1152,8 +1133,6 @@ main .museum_info_wrap .con_box .question .link_btns a:last-child {
   margin-right: 0;
 }
 
-main .museum_info_wrap .news {}
-
 main .museum_info_wrap .news li {
   overflow: hidden;
   margin: 20px 0;
@@ -1184,13 +1163,10 @@ main .museum_info_wrap .news li span {
   }
 
   /*header*/
-  header .header_util .allmenu_wrap {}
-
   header .header_util .allmenu_wrap .allmenu_box {
     padding: 130px calc((100% - 1200px) / 2);
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a1 {}
 
   header .header_util .allmenu_wrap .allmenu_box .a1>li {
     float: left;
@@ -1321,7 +1297,6 @@ main .museum_info_wrap .news li span {
   }
 
   /*팝업*/
-  .popup {}
 
   .popup .prev_btn {
     left: calc(5% - 20px);
@@ -1484,8 +1459,6 @@ main .museum_info_wrap .news li span {
   }
 
   /*footer*/
-  footer {}
-
   footer .relative_site_wrap {
     position: absolute;
     right: 5%;
@@ -1499,8 +1472,6 @@ main .museum_info_wrap .news li span {
   footer .corp_info_wrap .footer_logo {
     display: none;
   }
-
-  footer .corp_info_wrap address {}
 
   main section {
     height: auto;
@@ -1579,8 +1550,6 @@ main .museum_info_wrap .news li span {
     left: 0;
   }
 
-  footer {}
-
   footer .footer_menu_wrap {
     padding: 10px 0;
   }
@@ -1600,12 +1569,6 @@ main .museum_info_wrap .news li span {
     text-align: center;
     padding: 10px 0;
   }
-
-  footer .relative_site_wrap .sns {}
-
-  footer .relative_site_wrap .family_site {}
-
-  footer .corp_info_wrap {}
 
   footer .corp_info_wrap address {
     line-height: 1.5;

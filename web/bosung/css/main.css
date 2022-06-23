@@ -171,8 +171,6 @@ header .header_util i {
   vertical-align: middle;
 }
 
-header .header_util button {}
-
 header .header_util .search_wrap {
   float: left;
 }
@@ -195,7 +193,6 @@ header .header_util .lang_wrap {
   position: relative;
 }
 
-header .header_util .lang_wrap button {}
 
 header .header_util .lang_wrap ul {
   display: none;
@@ -222,7 +219,6 @@ header .header_util .family_wrap {
   position: relative;
 }
 
-header .header_util .family_wrap button {}
 
 header .header_util .family_wrap ul {
   display: none;
@@ -328,8 +324,6 @@ footer .corp_info_wrap .bar:after {
   margin: 0 12px;
   background: #666;
 }
-
-footer .family_site_wrap {}
 
 footer .family_site_wrap .family_site {
   width: 180px;
@@ -443,8 +437,6 @@ main .visual_slide_wrap .vis_slider .video_slide {
   overflow: hidden;
 }
 
-main .visual_slide_wrap .vis_slider .video_slide video {}
-
 main .visual_slide_wrap .vis_slider .video_slide .vis_txt {
   position: absolute;
   top: 50%;
@@ -521,8 +513,6 @@ main .visual_slide_wrap .pagination .play {
   display: none;
 }
 
-main .visual_slide_wrap .dir_control {}
-
 main .visual_slide_wrap .dir_control button {
   position: absolute;
   top: 50%;
@@ -571,8 +561,6 @@ main .visual_wrap .family_logo_wrap .family_logo a img {
   line-height: 1.1;
   font-weight: bold;
 }
-
-.news_wrap ul {}
 
 .news_wrap li {
   float: left;
@@ -820,8 +808,6 @@ main .main_banner_wrap .banner:hover .ban_more {
     z-index: 10;
   }
 
-  header nav .g1>li>a {}
-
   header nav .g1>li .g2 {
     display: none;
     width: 700px;
@@ -1026,7 +1012,6 @@ main .main_banner_wrap .banner:hover .ban_more {
 /*@tab*/
 
 @media screen and (max-width: 720px) {
-  .main_banner_wrap {}
 
   main .main_banner_wrap .banner {
     float: none;

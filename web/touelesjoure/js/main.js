@@ -1,5 +1,5 @@
 $(function () {
-  // pc_srech
+  //////////////////////////////////////////////////// pc_srech
   $('.search_wrap .search_btn').click(function () {
     $('.search_wrap .search_box').after().show()
   })
@@ -7,7 +7,7 @@ $(function () {
     $('.search_wrap .search_box').hide()
   })
 
-  // pc_allmenu
+  //////////////////////////////////////////////////// pc_allmenu
   $('.all_open_btn').click(function () {
     $('.allmenu_box').show()
     $('.allmenu_wrap').addClass('allmenu_bg')
@@ -17,7 +17,7 @@ $(function () {
     $('.allmenu_wrap').removeClass('allmenu_bg')
   })
 
-  // pc_gnb_bg
+  //////////////////////////////////////////////////// pc_gnb_bg
   $('.g1').hover(function () {
     $('header').addClass('gnb_bg')
     $('.g2').show()
@@ -28,19 +28,36 @@ $(function () {
   })
 
 
-  // pc-visual_wrap_swiper
+  //////////////////////////////////////////////////// pc-visual_wrap_swiper
+
   $('.visual_box ul').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.visual_box .vis_btn .vis_prve'),
     nextArrow: $('.visual_box .vis_btn .vis_next'),
+    slickPause: $('.visual_box .vis_btn .stop'),
+    slickPlay: $('.visual_box .vis_btn .play'),
     autoplay: true,
+    autoplaySpeed: 1000,
     dots: true,
     arrows: true,
     customPaging: function (slider, i) {
       return (i + 1) + '/' + slider.slideCount;
     }
   })
+  $('.vis_btn_container .play').click(function () {
+    $('.vis_btn_container .Pause').css('display', 'block')
+    $(this).css('display', 'none')
+    $('.visual_box ul').slick('slickPlay');
+  });
+
+  $('.vis_btn_container .Pause').click(function () {
+    $('.vis_btn_container .play').css('display', 'block')
+    $(this).css('display', 'none')
+    $('.visual_box ul').slick('slickPause');
+  });
+
+  ///////////////////////////// mo-visual_wrap_swiper
   $(window).on('resize', function () {
     if ($(window).width() < 720) {
       $('.visual_box .vis_img1').attr('src', 'img/visual_1_mo.png')
@@ -54,6 +71,7 @@ $(function () {
       $('.visual_box .vis_img3').attr('src', 'img/visual_3_mo.png')
     }
     else { $('.visual_box .vis_img3').attr('src', 'img/visual_3.png') }
+
   });
 
   if ($(window).width() < 720) {
@@ -69,23 +87,19 @@ $(function () {
   }
   else { $('.visual_box .vis_img3').attr('src', 'img/visual_3.png') }
 
-  // pc-product_wrap_swiper
+
+  //////////////////////////////////////////////////// pc-product_wrap_swiper
   const swiper = new Swiper('.product_wrap .content', {
-    // Optional parameters
     direction: 'horizontal',
     loop: false,
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
       nextEl: '.prod_next',
       prevEl: '.prod_prev',
     },
-
-    // And if we need scrollbar
     scrollbar: {
       el: '.prod_slider',
     },
@@ -106,10 +120,9 @@ $(function () {
   });
 
 
-  // pc-mian_event_wrap slick
+  //////////////////////////////////////////////////// pc-mian_event_wrap slick
   $('.event_wrap ul').slick({
     autoplay: true,
-    // autoSpeed : 5000,
     slidesToShow: 3,
     prevArrow: $('.event_wrap .event_btn .event_prve'),
     nextArrow: $('.event_wrap .event_btn .event_next'),
@@ -138,13 +151,12 @@ $(function () {
   });
 
 
-  // mob allmenu
+  //////////////////////////////////////////////////// mob allmenu
   $('.allmenu_box .a1>li').has('ul').addClass('dep1');
   $('.allmenu_box .a2>li').has('ul').addClass('dep2');
 
-  // mob allmenu click
+  //////////////////////////////////////////////////// mob allmenu click
   $('.allmenu_wrap .allmenu_box .a1>li>a').click(function () {
-    // $(this).next().stop().slideToggle();
     $(this).toggleClass('on')
     if ($(window).width() > 1199) {
       $(this).next().stop().show();
@@ -156,7 +168,7 @@ $(function () {
   })
 
 
-  // mob-quickmenu_slick
+  //////////////////////////////////////////////////// mob-quickmenu_slick
   $('.quickmenu_wrap ul').slick({
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -184,7 +196,7 @@ $(function () {
     $(fam_arrow).toggleClass('on')
   })
 
-  // top_btn
+  //////////////////////////////////////////////////// top_btn
   $('.top_btn a').click(function () {
     $('html, body').stop().animate({ scrollTop: '0' }, 500)
   })

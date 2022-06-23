@@ -5,329 +5,226 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>배강선 :: 웹퍼블리셔 포트폴리오</title>
-  <link rel="icon" href="img/favicon.png">
-  <!--CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <title>배강선 : 포트폴리오</title>
+  <link rel="stylesheet" href="web/css/reset.css">
+  <link rel="stylesheet" href="web/css/fonts.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/lightbox.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 
-  <!--JS-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
-  <script src="js/lightbox.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.4/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/main.js"></script>
 </head>
 
 <body>
-  <div id="wrap">
-    <header>
-      <div class="container">
-        <h1><span class="blind">신입 웹퍼블리셔 배강선</span></h1>
-        <ul id="gnb">
-          <li>Home</li>
-          <li>About Me</li>
-          <li>Publisher</li>
-          <li>Design</li>
-          <li>Contact</li>
+  <header>
+    <h1 class="logo">B<b>A</b>E:ST</h1>
+    <div class="gnb">
+      <ul class="clrfix">
+        <li class="gnb_btn work_btn underline">work</li>
+        <li class="gnb_btn aboutme_btn">about me</li>
+      </ul>
+    </div>
+  </header>
+  <section class="work">
+    <div class="blind_box"></div>
+    <div class="wrap">
+      <div class="navigation">
+        <h2 class="title">WORK</h2>
+        <div class="button">
+          <div class="swiper-button-prev"><img src="img/arrow_r.png" alt="prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"><img src="img/arrow_r.png" alt="next"></div>
+        </div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="web/touelesjoure/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_1.png" alt="뚜레쥬르">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">뚜레쥬르 리뉴얼</p>
+                <ul class="hashtag clrfix">
+                  <li>#반응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="web/nhn/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_2.png" alt="NHN">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">NHN 클론코딩</p>
+                <ul class="hashtag clrfix">
+                  <li>#적응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="web/bosung/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_3.png" alt="보성그룹">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">보성그룹 클론코딩</p>
+                <ul class="hashtag clrfix">
+                  <li>#반응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="web/jiran/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_4.png" alt="지란지교">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">지란지교 시큐리티 클론코딩</p>
+                <ul class="hashtag clrfix">
+                  <li>#반응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="web/komsco/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_5.png" alt="화폐박물관">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">화폐박물관 클론코딩</p>
+                <ul class="hashtag clrfix">
+                  <li>#반응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="web/kakao/index.html">
+              <div class="img_hover_wrap">
+                <img src="./img/work_6.png" alt="카카오 엔터프라이즈">
+                <span class="plus">plus</span>
+              </div>
+              <div class="work_info">
+                <p class="work_tit">카카오 엔터프라이즈 클론코딩</p>
+                <ul class="hashtag clrfix">
+                  <li>#반응형</li>
+                  <li>#HTML</li>
+                  <li>#CSS</li>
+                  <li>#JQuery</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about_me">
+    <div class="wrap">
+      <h2 class="title">ABOUT ME</h2>
+      <div class="personal_info clrfix">
+        <div class="personal_wrap">
+          <strong class="sub_title">이름</strong>
+          <p>배강선</p>
+        </div>
+        <div class="personal_wrap right">
+          <strong class="sub_title">생년월일</strong>
+          <p>1995 - 07 - 27</p>
+        </div>
+        <div class="personal_wrap">
+          <strong class="sub_title">이메일</strong>
+          <p>ss38318@naver.com</p>
+        </div>
+        <div class="personal_wrap right">
+          <strong class="sub_title">자격증</strong>
+          <p>전자기기기능사</p>
+        </div>
+        <div class="personal_wrap">
+          <strong class="sub_title">경력 및 학력 사항</strong>
+          <ul>
+            <li>21.11 ~ 22.05<span>이젠 컴퓨터 아카데미</span></li>
+            <li>19.12 ~ 21.05<span>(주)은해씨월드</span></li>
+            <li>18.08 ~ 19.06<span>반도수산(주)</span></li>
+            <li>11.03 ~ 14.02<span>용산공업고등학교 졸업</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill">
+        <strong class="sub_title">보유스킬</strong>
+        <div class="s1">
+          <ul>
+            <li class="pie_chart psd">
+              <img src="img/psd.png" alt="포토샵 로고" class="front">
+              <p class="back">70%</p>
+            </li>
+            <li class="pie_chart ai">
+              <img src="img/ai.png" alt="일러스트 로고" class="front">
+              <p class="back">70%</p>
+            </li>
+            <li class="pie_chart html">
+              <img src="img/html.png" alt="html 로고" class="front">
+              <p class="back">90%</p>
+            </li>
+            <li class="pie_chart css">
+              <img src="img/css.png" alt="css 로고" class="front">
+              <p class="back">90%</p>
+            </li>
+            <li class="pie_chart js">
+              <img src="img/js.png" alt="javaScript 로고" class="front">
+              <p class="back">50%</p>
+            </li>
+            <li class="pie_chart jq">
+              <img src="img/jquery.png" alt="jQuery 로고" class="front">
+              <p class="back">70%</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact">
+        <strong class="sub_title">CONTACT</strong>
+        <ul class="contack_wrap">
+          <li class="kakao">
+            <a href="https://open.kakao.com/o/sldRup9d  " target="_blank">
+              <img src="img/kakao.png" alt="카카오톡 아이콘">
+              <p>오픈 채팅 바로가기</p>
+            </a>
+          </li>
+          <li class="curriculum">
+            <a href="배강선_입사지원서.hwp.pdf" target="_blank">
+              <img src="img/curriculum.png" alt="이력서 아이콘">
+              <p>자기소개서 보러가기</p>
+            </a>
+          </li>
         </ul>
       </div>
-    </header>
-    <main>
-      <section id="home" class="">
-        <div class="home_bg">
-          <div class="home_txt">
-            <h2>Web Publisher</h2>
-            <em>Web Designer, Web Publisher, UI Designer</em>
-          </div>
-          <img src="img/mouse.png" alt="scroll down" class="scroll">
-        </div>
-      </section>
-      <section id="about" class="">
-        <div class="container">
-          <h2>About Me</h2>
-          <div class="about_info clrfix">
-            <div class="introduce">
-              <img src="img/blank.png" alt="blank_img">
-              <p class="intro_txt">
-                웹퍼블리셔를 꿈꾸는<br>
-                배강선 입니다.
-              </p>
-            </div>
-            <div class="career">
-              <div class="personal_info">
-                <h3>개인정보</h3>
-                <ul>
-                  <li>거주지 : 관악구</li>
-                  <li></li>
-                  <li>MBTI : ISTP - T</li>
-                </ul>
-              </div>
-              <div class="license">
-                <h3>자격증</h3>
-                <ul>
-                  <li>전자기기기능사</li>
-                  <li>운전면허 1종 대형 / 보통</li>
-                </ul>
-              </div>
-              <div class="academic">
-                <h3>교육사항</h3>
-                <ul>
-                  <li>
-                    <span>21.11.08 ~ 22.04.07</span>
-                    <strong>이젠 컴퓨터 아카데미 학원</strong>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="skill">
-              <h3>skill</h3>
-              <ul class="s1 clrfix">
-                <li class="pie-chart psd">
-                  <span class="center"></span><img src="img/psd.png" alt="포토샵 로고"><span>70%</span>
-                </li>
-                <li class="pie-chart ai"><img src="img/ai.png" alt="일러스트 로고"><span>70%</span></li>
-                <li class="pie-chart html"><img src="img/html.png" alt="html 로고"><span>90%</span></li>
-                <li class="pie-chart css"><img src="img/css.png" alt="css 로고"><span>90%</span></li>
-                <li class="pie-chart js"><img src="img/js.png" alt="javaScript 로고"><span>50%</span></li>
-                <li class="pie-chart jq"><img src="img/jquery.png" alt="jQuery 로고"><span>70%</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="work1" class="">
-        <div class="container">
-          <h2>Publisher</h2>
-          <div class="web_swiper">
-            <div class="swiper_wrap swiper-wrapper">
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web1" alt="">
-                <div class="web_txt">
-                  <div class="work_title">TOUS les JOURS</div>
-                  <div class="work_summary">
-                    <ul class="work_tag clrfix">
-                      <li>#반응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                      <li>#jquery</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기획, 디자인, 코딩 100%</li>
-                      <li>- 제작 기간: 기획 7일, 디자인 4일, 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="web/touelesjoure/index.html" target="_blank">메인페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web2" alt="">
-                <div class="web_txt">
-                  <div class="work_title">NHN</div>
-                  <div class="work_summary nhn_h">
-                    <ul class="work_tag clrfix">
-                      <li>#적응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                      <li>#jquery</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기존 페이지 클론코딩 100%</li>
-                      <li>- 제작 기간: 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link nhn_link">
-                    <a href="web/nhn/index.html" target="_blank">메인페이지</a>
-                  </div>
-                  <div class="sub_link">
-                    <a href="web/nhn1/company_ethics.html" target="_blank">기업윤리규범 페이지</a>
-                    <a href="web/nhn1/press_release.html" target="_blank">보도자료 페이지</a>
-                    <a href="web/nhn1/related_company.html" target="_blank">주요관계사 페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web3" alt="">
-                <div class="web_txt">
-                  <div class="work_title">보성그룹</div>
-                  <div class="work_summary">
-                    <ul class="work_tag clrfix">
-                      <li>#반응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기존 페이지 클론코딩 100%</li>
-                      <li>- 제작 기간: 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="web/bosung/index.html" target="_blank">메인페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web4" alt="">
-                <div class="web_txt">
-                  <div class="work_title">지란지교 시큐리티</div>
-                  <div class="work_summary">
-                    <ul class="work_tag clrfix">
-                      <li>#적응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                      <li>#jquery</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기존 페이지 클론코딩 100%</li>
-                      <li>- 제작 기간: 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="web/jiran/index.html" target="_blank">메인페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web5" alt="">
-                <div class="web_txt">
-                  <div class="work_title">화폐박물관</div>
-                  <div class="work_summary">
-                    <ul class="work_tag clrfix">
-                      <li>#반응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                      <li>#jquery</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기존 페이지 클론코딩 100%</li>
-                      <li>- 제작 기간: 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="web/komsco/index.html" target="_blank">메인페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_slide swiper-slide">
-                <img src="img/blank.png" class="web6" alt="">
-                <div class="web_txt">
-                  <div class="work_title">카카오 엔터프라이즈</div>
-                  <div class="work_summary">
-                    <ul class="work_tag clrfix">
-                      <li>#반응형</li>
-                      <li>#html</li>
-                      <li>#css</li>
-                      <li>#jquery</li>
-                    </ul>
-                    <ul class="work_explain clrfix">
-                      <li>- 기존 페이지 클론코딩 100%</li>
-                      <li>- 제작 기간: 코딩 4일</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="web/kakao/index.html" target="_blank">메인페이지</a>
-                  </div>
-                </div>
-              </div>
-              <div class="web_pagination"></div>
-            </div>
-            <button class="web_prev"><img src="img/prev.png" alt=""></button>
-            <button class="web_next"><img src="img/next.png" alt=""></button>
-            <div class="web_scrollbar"></div>
-          </div>
-        </div>>
-      </section>
-      <section id="work2" class="">
-        <div class="container">
-          <h2>Design</h2>
-          <ul class="tabs">
-            <li class="on" data-filter="*">전체</li>
-            <li data-filter=".d1">컨텐츠디자인</li>
-            <li data-filter=".d2">배너디자인</li>
-            <li data-filter=".d3">웹디자인</li>
-          </ul>
-          <ul class="work_thumb">
-            <li class="d1"><a href="img/design_1.png" data-lightbox="graphic">
-                <img src="img/design_1.png" alt="배송서비스 디자인">
-                <span>
-                  <strong>컨텐츠 디자인 <i class="fa fa-plus-circle" aria-hidden="true"></i></strong>
-                </span>
-              </a>
-            </li>
-            <li class="d2">
-              <a href="img/design_2.png" data-lightbox="graphic">
-                <img src="img/design_2.png" alt="배너 디자인">
-                <span><strong>배너 디자인
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                  </strong></span>
-              </a>
-            </li>
-            <li class="d3"><a href="img/design_3.png" data-lightbox="graphic"><img src="img/design_3.png"
-                  alt="웹 디자인"><span><strong>웹 디자인<i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-            <li class="d1"><a href="img/design_4.png" data-lightbox="graphic"><img src="img/design_4.png"
-                  alt="뚜레쥬르 요기요 할인 혜택 디자인"><span><strong>컨텐츠 디자인<i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-            <li class="d1"><a href="img/design_5.png" data-lightbox="graphic"><img src="img/design_5.png"
-                  alt="뚜레쥬르 배달의 민족 할인 혜택 디자인"><span><strong>컨텐츠 디자인<i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-            <li class="d2"><a href="img/design_6.png" data-lightbox="graphic"><img src="img/design_6.png"
-                  alt="뚜레쥬르 티거_데코 스티커 배너 디자인"><span><strong>배너 디자인<i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-            <li class="d1"><a href="img/design_7.png" data-lightbox="graphic"><img src="img/design_7.png"
-                  alt="뚜레쥬르 통신사 할인 디자인"><span><strong>컨텐츠 디자인 <i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-            <li class="d2"><a href="img/design_8.png" data-lightbox="graphic"><img src="img/design_8.png"
-                  alt="뚜레쥬르 봄 신제품 디자인"><span><strong>배너 디자인 <i class="fa fa-plus-circle"
-                      aria-hidden="true"></i></strong></span></a></li>
-          </ul>
-        </div>
-      </section>
-      <section id="contact" class="">
-        <div class="container">
-          <h2>CONTACT</h2>
-          <div class="contact_txt">
-            <strong>A day without laughter is a day wasted.</strong>
-            <p>"웃음없는 하루는 낭비한 하루다"</p>
-            <span class="author">-Charlie Chaplin-</span>
-          </div>
-
-          <div class="contact_info">
-            <div class="email">
-              <a href="https://mail.naver.com/" target="_blank">
-                <img src="img/mail.png" alt="메일 아이콘">
-                <p>ss38318@naver.com</p>
-              </a>
-            </div>
-            <div class="kakao">
-              <a href="https://open.kakao.com/o/sldRup9d" target="_blank">
-                <img src="img/kakao.png" alt="카카오톡 아이콘">
-                <p>카카오톡 오픈채팅</p>
-              </a>
-            </div>
-            <div class="curriculum">
-              <a href="배강선_입사지원서.hwp" target="_blank">
-                <img src="img/curriculum.png" alt="이력서 아이콘">
-                <p>이력서</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>개인 포트폴리오용으로 제작된 사이트입니다.</p>
-      <p class="copyright">&copy; 2022 Bae KangSun. All Rights Reserved.</p>
-    </footer>
-  </div>
+  </section>
 </body>
 
 </html>

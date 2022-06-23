@@ -102,9 +102,6 @@ header .lang li:first-child a:before {
   margin-right: 40px;
 }
 
-.visual_wrap {}
-
-.visual_wrap .visula_cont {}
 
 .visual_wrap .visula_cont img {
   width: 100%;
@@ -131,7 +128,6 @@ header .lang li:first-child a:before {
   font-weight: 500;
 }
 
-.visual_wrap .visual_footer {}
 
 .visual_wrap .visual_footer ul {
   position: absolute;
@@ -217,8 +213,6 @@ header .lang li:first-child a:before {
   background-position: -21px 0;
 }
 
-.visual_wrap .visual_slide .slideber_on {}
-
 .visual_wrap .visual_slide .slidebar_off {
   display: inline-block;
   background: #fff;
@@ -226,8 +220,6 @@ header .lang li:first-child a:before {
   height: 2px;
   margin: 0 20px 8px 20px;
 }
-
-.visual_wrap .visual_slide .page_num {}
 
 .visual_wrap .visual_slide .page_num:after {
   content: "";
@@ -333,7 +325,6 @@ footer address {
   color: #999;
 }
 
-footer address ul {}
 
 footer address li {
   float: left;

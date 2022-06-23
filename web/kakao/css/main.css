@@ -125,11 +125,6 @@ nav .mo_nav_foot .sns_list li img {
     vertical-align: middle;
 }
 
-/*
-header:hover {border-bottom: 1px solid #b3b3b3;background: #FFF;color: #333}
-header:hover h1 a {background-image: url(../img/logo_enterprise_b.png)}
-*/
-
 /*Footer*/
 footer {
     border-top: 1px solid #b3b3b3;
@@ -138,8 +133,6 @@ footer {
 footer .footer_logo {
     height: 20px;
 }
-
-footer .footer_menu {}
 
 footer .footer_menu>li {
     float: left;
@@ -234,9 +227,6 @@ footer .related_site .site_list ul li {
     line-height: 1.7em;
 }
 
-
-footer .sns_list {}
-
 footer .sns_list li {
     float: left;
 }
@@ -281,7 +271,6 @@ footer .sns_list li img {
     font-weight: 700;
 }
 
-.main_visual_wrap li img {}
 
 .main_visual_wrap li:nth-child(1) {
     display: block;
@@ -314,7 +303,6 @@ main section a p {
     margin-top: 50px;
 }
 
-.main_contents_1 section.content_company {}
 
 .main_contents_1 section.content_company p {
     margin-bottom: 15px;
@@ -336,8 +324,6 @@ main section a p {
     font-weight: 700;
     color: #666
 }
-
-.main_contents_2 {}
 
 .main_contents_2 section a img {
     display: block;
@@ -629,8 +615,6 @@ main section a p {
         position: relative;
     }
 
-    footer .footer_logo {}
-
     footer .footer_menu {
         margin-top: 36px;
     }
@@ -652,9 +636,6 @@ main section a p {
     footer .sns_list li img {
         width: 28px;
     }
-
-
-    footer .related_site {}
 
     footer .related_site button {
         line-height: 46px;
