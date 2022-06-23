@@ -83,22 +83,6 @@ header .gnb li.underline {
   border-right: 4px solid var(--point_color);
 }
 
-
-/* header .gnb .work_btn:after,
-header .gnb li:hover:after,
-header .gnb li.underline:after {
-  content: "";
-  display: block;
-  background: var(--point_color);
-  font-weight: 600;
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 56px;
-} */
-
-
 /*============================
  *section
 ============================*/
@@ -224,6 +208,8 @@ section .wrap .title:after {
 .work .navigation .swiper-button-prev::after {
   display: none;
 }
+
+/* work_swiper */
 
 .work .swiper {
   overflow: unset;
