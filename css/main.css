@@ -190,7 +190,6 @@ work
 
 .work .swiper .swiper-wrapper .swiper-slide {
   margin-top: 50px;
-  width: 530px;
   position: relative;
 }
 
@@ -333,10 +332,6 @@ work
   background-color: #f1f1f1;
 }
 
-.about_me .wrap .skill .pie_chart:last-child {
-  margin-right: 0;
-}
-
 .about_me .wrap .skill .pie_chart .back,
 .about_me .wrap .skill .pie_chart .front {
   position: absolute;
@@ -409,7 +404,7 @@ work
 /*=======================================
 피씨
 ========================================= */
-@media (min-width : 721px) {
+@media (min-width : 601px) {
 
   /* common */
   .work .blind_box {
@@ -452,6 +447,10 @@ work
 
   .work .navigation .button .swiper-button-next:hover {
     right: 0;
+  }
+
+  .work .swiper .swiper-wrapper .swiper-slide {
+    width: 530px;
   }
 
   .work .swiper .swiper-wrapper .swiper-slide:nth-child(2n-1) {
@@ -505,19 +504,26 @@ work
     opacity: 1;
     transform: rotate(360deg);
   }
-}
 
+  /*============================
+  about_me---skill
+  ============================*/
+  .about_me .wrap .skill .pie_chart:last-child {
+    margin-right: 0;
+  }
+}
 
 /*=======================================
 모바일
 ========================================= */
-@media (max-width : 720px) {
+@media (max-width : 600px) {
 
   /* common */
   section .wrap {
-    width: 440px;
+    width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   section .wrap .title {
@@ -564,6 +570,7 @@ work
     width: 100px;
   }
 
+
   .work .navigation .button .swiper-pagination .swiper-pagination-current {
     font-size: 18px;
   }
@@ -586,23 +593,32 @@ work
   }
 
   .work .swiper .swiper-wrapper .swiper-slide .img_hover_wrap {
-    width: 440px;
+    width: 100%;
     margin: 50px 0;
+
+  }
+
+  .work .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
   }
 
   .work .swiper .swiper-wrapper .swiper-slide .work_info .work_tit {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .work .swiper .swiper-wrapper .swiper-slide .work_info .hashtag li {
+    font-size: 12px;
   }
 
   /*============================
   about_me---personal_info
   ============================*/
   .about_me .wrap .personal_info .personal_wrap {
-    width: 440px;
+    width: 100%;
   }
 
   .about_me .wrap .personal_info .personal_wrap ul {
-    width: 440px;
+    width: 100%;
   }
 
   /*============================
@@ -611,7 +627,7 @@ work
   .about_me .wrap .skill .pie_chart {
     width: 100px;
     height: 100px;
-    margin-right: 60px;
+    margin-right: 10px;
   }
 
   .about_me .wrap .skill .pie_chart.html,
@@ -643,8 +659,13 @@ work
 
   /* contact */
   .about_me .contact img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .about_me .contact p {
+    margin-top: 20px;
+    font-size: 12px;
   }
 
 }
