@@ -643,7 +643,7 @@ work
   .about_me .wrap .skill .pie_chart {
     width: 100px;
     height: 100px;
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .about_me .wrap .skill .pie_chart.html,
