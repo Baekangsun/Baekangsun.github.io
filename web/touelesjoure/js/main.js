@@ -38,7 +38,7 @@ $(function () {
     slickPause: $('.visual_box .vis_btn .stop'),
     slickPlay: $('.visual_box .vis_btn .play'),
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     dots: true,
     arrows: true,
     customPaging: function (slider, i) {
@@ -173,6 +173,8 @@ $(function () {
     slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 3000,
+    loop: true,
     responsive: [
       {
         breakpoint: 1200,
