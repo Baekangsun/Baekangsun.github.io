@@ -410,17 +410,6 @@ work
 ========================================= */
 @media (min-width : 601px) {
 
-  /* common */
-  .work .blind_box {
-    width: 320px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 60px;
-    z-index: 2;
-  }
-
   /*============================
   header
   ============================*/
