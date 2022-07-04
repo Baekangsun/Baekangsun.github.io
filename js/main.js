@@ -15,7 +15,7 @@ var swiper = new Swiper('.work .swiper', {
   slidesPerView: "auto",
   spaceBetween: 40,
   mousewheel: true,
-  loop: true,
+  loop: false,
   pagination: {
     el: ".navigation .swiper-pagination",
     type: "fraction",
