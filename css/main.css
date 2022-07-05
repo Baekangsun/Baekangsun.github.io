@@ -500,6 +500,7 @@ work
   .work .swiper .swiper-wrapper .swiper-slide:hover .plus {
     opacity: 1;
     transform: rotate(360deg);
+    -webkit-transform: translateZ(0)
   }
 
   /*============================
