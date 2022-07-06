@@ -122,27 +122,6 @@ work
   position: relative;
 }
 
-/* .work .navigation .button {
-  position: absolute;
-  bottom: 0px;
-  right: 50px;
-  width: 150px;
-  height: 30px;
-  line-height: 30px;
-  user-select: none;
-} */
-
-
-/* .work .navigation .button .swiper-pagination {
-  width: auto;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
 .work .navigation .button {
   position: absolute;
   right: 0;
@@ -152,7 +131,6 @@ work
 
 .work .navigation .button .buttonWrap {
   position: relative;
-
 }
 
 .work .navigation .button .swiper-pagination {
@@ -176,24 +154,13 @@ work
 
 .work .navigation .swiper-button-prev,
 .work .navigation .swiper-button-next {
-  /* position: inherit; */
   top: 0;
   display: inline-block;
   margin-top: 0;
   height: auto;
-}
-
-/* .work .navigation .swiper-button-prev,
-.work .navigation .swiper-button-next {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  transition: 0.3s;
   cursor: url(../img/mouse_active.png) 20 20, auto;
-  transition: all 0.5s;
-} */
+}
 
 .work .navigation .button .swiper-button-prev {
   left: 8px;
@@ -243,7 +210,7 @@ work
 
 
 .work .swiper .swiper-wrapper .swiper-slide .work_info {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 20px;
 }
 
@@ -595,9 +562,7 @@ work
   work
   ============================*/
   .work .navigation .button {
-    bottom: -12px;
-    right: 0;
-    width: 100px;
+    width: 120px;
   }
 
 
@@ -624,7 +589,7 @@ work
 
   .work .swiper .swiper-wrapper .swiper-slide .img_hover_wrap {
     width: 100%;
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   .work .swiper .swiper-wrapper .swiper-slide img {
