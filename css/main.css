@@ -193,7 +193,6 @@ work
 
 .work .swiper .swiper-wrapper .swiper-slide .img_hover_wrap {
   width: 100%;
-  /* height: 300px; */
   overflow: hidden;
   box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 10%);
 }
@@ -589,7 +588,6 @@ work
 
   .work .swiper .swiper-wrapper .swiper-slide .img_hover_wrap {
     width: 100%;
-    margin: 30px 0;
   }
 
   .work .swiper .swiper-wrapper .swiper-slide img {
